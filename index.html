@@ -1,87 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>car details</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/index.css">
-</head>
-</head>
-<body>
-    <section class="car">
-     <!--start head-->
-        <div class="head">
-            <div class="container-fluid">
-                <!--start navbar-->
-                <nav class="navbar navbar-light  ">
-                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="bttn">
-                        <button> اضف اعلان </button>
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto ">
-                        <li class="nav-item active">
-                            <a class="nav-link " href="#">Home</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link " href="#">Link1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Link2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Link3</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Link4</a>
-                        </li>
-                    </div>
-                    
-                </nav>
-                <!--end navbar-->
-                <!--start div for images-->
-                <div class="container">
-                <div>
-                    <img class="d-block mx-auto" src="images/! اووبس.png" alt="اوبس ">
-                </div>
-                <div class="container">
-                    <img class="image d-block mx-auto" src="images/shopping-bag.png" alt="shopping-bag">
-                </div>
-                </div>
-                <!--end div for images-->
-            </div>
-        </div>
-     <!--end head-->
-     <!--start header-->
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="helping you to buy and sell your car">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>OOPS</title>
+        <link rel="icon" href="images/logo.png">
+        <!--bootstrap-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--font awesome-->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!--css file-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--start header-->
         <header>
-           <div class="container-fluid">
-             <h2>شيفورلية</h2>
-             <p>القاهرة , المعادى | تم اضافة الأعلان فى 12:30</p>
-           </div>
-        </header>
-     <!--end header-->
-     <!--start section info-->
+            <!--start navbar-->
+            <nav class="navbar">
+                <div class="container-fluid text-start p-3">
+                    <div class="d-flex align-items-center gap-1">
+                        <i class="fa-solid fa-user text-light fs-4"></i>
+                        <a href="#" class="btn rounded-pill fw-semibold">اضف اعلان</a>
+                    </div>
+                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--end navbar-->
+            <!--start div images-->
+            <div class="images">
+                <div class="first">
+                    <img class="first d-block mx-auto img-fluid" src="images/! اووبس.png" alt="اوبس">
+                </div>
+                <div class="second">
+                    <img class="d-block mx-auto img-fluid" src="images/shopping-bag.png" alt="shopping-bag">
+                </div>
+            </div>
+            <!--end div images-->
+        </header>   
+        <!--end header-->     
+        <!--start section heading-->
+        <section class="heading">
+            <div class="container-fluid">
+                <h2>شيفورلية</h2>
+                <p class="m-auto fs-3">القاهرة , المعادى | تم اضافة الأعلان فى 12:30</p>
+            </div>
+        </section>
+        <!--end section heading-->
+        <!--start section info-->
         <section class="info">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-3 text-center">
-                            <h3><bdi>ج م</bdi> 222.000</h3>
-                            <button class="one">ارسال رسالة</button>
-                            <button class="two">اتصال</button>
-                            <div class="customer">
-                                <span>علا رضا السيد</span>
-                                <i class="far fa-user" aria-hidden="true"></i>
-                                <br>
-                                <p>إعلانات هذا المستخدم </p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="box-body">
+                            <img src="images/cheverolet.jpg" alt="cheverolet" class="w-100 img-fluid">
+                                <div class="row"> 
+                                    <div class="col-sm-6">
+                                        <div class="favourite text-center">
+                                            <i class="fa-regular fa-star"></i>
+                                            <h6>اضف الي المفضلة</h6>
+                                            <p>الموديل : كروز</p>
+                                            <p>ناقل الحركة : اوتماتيك</p>
+                                            <p>70.000 : كيلومترات</p>
+                                            <p>السنه : 2018</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="problem text-center">
+                                            <i class="fa-solid fa-circle-exclamation"></i>
+                                            <h6> الابلاغ عن مشكلة</h6>
+                                            <p>طريقة الدفع : كاش</p>
+                                            <p>الحالة : مستعمل</p>
+                                            <p>المحرك : 1600 - 1400</p>
+                                            <div>
+                                                <p>: إضافات</p>
+                                                <ul class="list-unstyled text-end">
+                                                    <li><span>تكيف</span></li>
+                                                    <li><sapn>تنبيه / نظام مضاد للسرقة</span></li>
+                                                    <li><span>راديو اف ام</span></li>
+                                                    <li><span>aux مدخل اديو</span></li>
+                                                    <li><span>فوانيس شبورة</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="details">
+                                            <h6> : تفاصيل </h6>
+                                            <p>عربية بحالة ممتازة والمعاينة خير دليل ومش محتاجة مصاريف اه انا بكدب</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="message">
+                                            <h6>: ارسل رسالة </h6>
+                                            <textarea placeholder=" .. اكتب رسالتك "></textarea>
+                                            <a href="#">ارسال</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="box text-center">
+                            <h3 class="rounded-pill mt-0 mb-4">222.000<bdi>ج م</bdi></h3>
+                            <a href="#" class="one btn rounded-pill mb-4">ارسال رسالة</a>
+                            <a href="#" class="two btn rounded-pill mb-4">اتصال</a>
+                            <div class="customer mb-4">
+                                <i class="fa-regular fa-user"></i>
+                                <p class="d-inline-block mb-2">علا رضا السيد</p>
+                                <span class="d-block">إعلانات هذا المستخدم</span>
                             </div>
                             <div class="instruction">
-                                <h5>سلامتك تهمنا</h5>
-                                <ul>
+                                <h5 class="mb-4">سلامتك تهمنا</h5>
+                                <ul class="list-unstyled">
                                     <li><p>قابل البايع فى مكان عام زي المترو او المولات او محطات البنزين </p></li>
                                     <li><p>خد حد معاك وانت رايح تقابل حد </p></li>
                                     <li><p>عاين المنتج كويس قبل ماتشتري وتاكد ان سعره مناسب </p></li>
@@ -89,107 +146,68 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-9">
-                            <img src="images/cheverolet.jpg" alt="cheverolet" width="100%" height="40%">
-                                <div class="container text-center">
-                                    <div class="row"> 
-                                            <div  class="col-sm-6 problem">
-                                                <i class="fas fa-exclamation-circle"></i>
-                                                <h6> الابلاغ عن مشكلة</h6>
-                                                <p>طريقة الدفع : كاش</p>
-                                                <p>الحالة: مستعمل</p>
-                                                <p>المحرك:1600-1400</p>
-                                                <p class="lead">:إضافات<br>
-                                                    <span>
-                                                        تكيف<br>
-                                                        تنبيه / نظام مضاد للسرقة<br>
-                                                        راديو اف ام <br>
-                                                        <bdi> aux </bdi>مدخل اديو <br>
-                                                        فوانيس شبورة
-                                                    </span>
-                                                </p>
-
-                                            </div>
-                                            <div  class="col-sm-6  favourite" >
-                                                <i class="far fa-star"></i>
-                                                <h6>اضف الي المفضلة</h6>
-                                                <p>الموديل : كروز</p>
-                                                <p>ناقل الحركة :اوتماتيك</p>
-                                                <p> 70.000 : كيلومترات</p>
-                                                <p>السنه : 2018</p>
-                                            </div>
-                                    </div>
-                                </div>
-                            <!--start div details-->
-                            <div class="container">
-                                <div class="row">
-                                    <div class=" details col-sm-12">
-                                        <h6> : تفاصيل </h6>
-                                        <p>  عربية بحالة ممتازة والمعاينة خير دليل ومش محتاجة مصاريف اه انا بكدب </p>
-
-                                    </div>
-
-                                    <div class=" message col-sm-12">
-                                        <h6>: ارسل رسالة </h6>
-                                        <textarea placeholder=" .. اكتب رسالتك "></textarea>
-                                        <button>ارسال</button>
-
-                                    </div>
-
-                                </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end section info-->
+        <!--start footer-->
+        <footer class="p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="about mb-sm-5">
+                            <img src="images/! اووبس.png" alt="اووبس" class="first w-75 img-fluid">
+                            <img src="images/shopping-bag.png" alt="shopping-bag" class="second img-fluid">
+                            <p class="mt-lg-4">
+                                لوريم ايبسوم هو نموذج
+                                افتراضي  يوضع ف التصاميم 
+                                لتعرض علي العميل ليتصور
+                                طريقة وضع النصوص بالتصاميم
+                                سواء كانت تصاميم مطبوعة...
+                                بروشور او فلاير علي سبيل المثال
+                                ... او نماذج مواقع انترنت
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="links text-center text-lg-start lh-lg mb-4">
+                            <ul class="list-unstyled pe-2">
+                                <li><a href="#" class="fw-light">الاسئلة الاكثر تدوالا</a></li>
+                                <li><a href="#" class="fw-light">شروط الإستخدام</a></li>
+                                <li><a href="#" class="fw-light">سياسة الإستخدام</a></li>
+                                <li><a href="#" class="fw-light">خريطة المحافظة</a></li>
+                                <li><a href="#" class="fw-light">خريطة الموقع</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="icons text-center mb-4 d-flex align-items-center justify-content-center">
+                            <a href="#"><i class="fa-brands fa-instagram me-3"></i></a>   
+                            <a href="#"><i class="fa-brands fa-twitter me-3"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook me-3"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="contact">
+                            <h4 class="text-center"> قم بتحميل التطبيق </h4> 
+                            <h5 class="text-center mb-3">الخاص بينا مجانا</h5>
+                            <div class="link mb-3 d-flex align-items-center justify-content-center">
+                                <a href="#" class="text-center">Get it on google play</a>
+                                <i class="fa-brands fa-google-play pe-2"></i>
                             </div>
-                            <!--end div details-->
-
+                            <div class="link d-flex align-items-center justify-content-center">
+                                <a href="#" class="text-center">Get it on app store</a>
+                                <i class="fa-brands fa-apple pe-3"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
-       </section>
-       <!--end section info-->
-       <!--start footer-->
-                <footer>
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <h4> قم بتحميل التطبيق </h4> 
-                                <h5>الخاص بينا مجانا  </h5>
-                                <button><i class="fab fa-google-play"></i>Get it on google play</button>
-                                <button><i class="fab fa-apple"></i>Get it on app store</button>
-                            </div>
-                            <div class="col-sm-3 icon">
-                                <a href="#"><i class="fab fa-facebook"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>   
-                            </div>
-                            <div class="col-sm-3 linkes">
-                                <ul class="list-unstyled">
-                                    <li><a href="#">الاسئلة الاكثر تدوالا</a></li>
-                                    <li><a href="#">شروط الإستخدام</a></li>
-                                    <li><a href="#">سياسة الإستخدام</a></li>
-                                    <li><a href="#">خريطة المحافظة</a></li>
-                                    <li><a href="#">خريطة الموقع</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-3 ">
-                                    <img  class="oops" src="images/! اووبس.png" width="60%" height="40%">
-                                    <img class="bag" src="images/shopping-bag.png" width="15%" height="15%">
-                                <p class="lead">
-                                    لوريم ايبسوم هو نموذج
-                                    افتراضي  يوضع ف التصاميم 
-                                    لتعرض علي العميل ليتصور
-                                    طريقة وضع النصوص بالتصاميم
-                                    سواء كانت تصاميم مطبوعة...
-                                    بروشور او فلاير علي سبيل المثال
-                                    ... او نماذج مواقع انترنت
-                                </p>
-                
-
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-       <!--end footer-->
-    </section>
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-</body>
+            </div>
+        </footer>
+        <!--end footer-->
+        </section>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/all.min.js"></script>
+    </body>
 </html>
