@@ -44,12 +44,22 @@ nav .btn:focus{
 }
 /*end nav*/
 /*start div images*/
-.images .first img {
-    transform: translateY(55px);
+.images {
+    width: fit-content;
+    background-color: red;
+    transform: translateY(50px);
 }
+/* .images .first img {
+    transform: translateY(55px);
+} */
 .images .second img {
     position: relative;
     z-index: 111;
+}
+@media (max-width:576px) {
+    .images {
+        transform: translateY(50px);
+    }
 }
 @media (max-width:400px) {
     .images .first img {
@@ -59,63 +69,31 @@ nav .btn:focus{
 /*end div images*/
 /*end header*/
 /*start section heading*/
-.heading {
-    padding: 30px;
-}
 .heading p {
     color:var(--main-color);
 }
 /*end section heading*/
 /*start section info*/
-.problem  i, h6{
-    color: var(--main-color);
-    font-size:22px;
-}
-.problem p{
-    min-height:40px;
-    background-color: white;
-    color: black;
-    text-align: right;
-    border-radius: 20px;
-    padding:8px 15px;
-    font-size:17px;
-}
-.favourite h6, i{
+.info .favourite h5, .info .favourite svg {
     color: #a52a2a87;
-    font-size:22px;
 }
-.favourite p{
-    height:40px;
-    background-color: white;
+.info .favourite p, 
+.info .problem p, 
+.info .problem .addtion,
+.info .details p {
+    background-color: var(--second-color);
     color: black;
     text-align: right;
-    padding:8px 15px;
+    padding: 10px 16px;
     border-radius: 20px;
-    font-size:17px;
 }
-.container .details h6{
-    text-align:right;
-    color:#ca4658bf;
-    margin-bottom:15px;
-
+.info .problem svg, .info .problem h5 {
+    color: rgb(251 139 94);
 }
-.container .details p{
-    background-color: white;
-    text-align: center;
-    border-radius: 30px;
-    padding: 15px;
-    font-size:17px;
-    margin-bottom:20px;
-    width: 98%;
-
+.info .details h5, .info .message h5 {
+    color: #ca4658bf;
 }
-.container .message h6{
-    text-align:right;
-    color:#ca4658bf;
-    margin-bottom:20px;
-
-}
-.container .message textarea{
+.info .message textarea {
     text-align: right;
     width: 98%;
     height: 150%;
@@ -123,7 +101,7 @@ nav .btn:focus{
     outline:none;
     margin-bottom:20px;
 }
-.container .message button{
+.info .message button{
     display: block;
     width: 25%;
     text-align: center;
@@ -139,7 +117,7 @@ nav .btn:focus{
     box-shadow:-7px -7px 20px #f68338 inset;
     transition: box-shadow .2s ease .1s;
 }
-.container .message button:hover{
+.info .message button:hover{
     box-shadow: 1px 2px 15px #0000005e;
 }
 .info .box h3 {
@@ -193,20 +171,18 @@ nav .btn:focus{
     color: var(--second-color);
     margin: auto;
     width: 80%;
-    border-radius: 15px;
+    border-radius: 20px;
 } 
-.info .box .instruction ul li::before{
+.info .box .instruction p::before{
     content: "\2022";
-    color: var(--main-color);
-    float: right;
-    margin-left: 3px;
-    font-size:25px;
-    padding-right:6px;
+    color: rgb(251 139 94);
+    margin-left: 2px;
 }
 /*end section info*/
 /*start footer*/
 footer {
     background-color:var(--main-color);
+    margin-top: 65px;
 }
 footer .about .first {
     transform: translateY(-26px);
