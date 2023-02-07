@@ -2,21 +2,22 @@
     --main-color: #cc495dfa;
     --second-color: white;
 }
-::selection{
+::selection {
     background-color: var(--main-color);
     color:white;
 }
-body{
+body {
     font-family: 'Cairo', sans-serif;
     direction: rtl;
     background-color:#f3f3f3;
 }
 /*start header*/
-header{
-    background-image:url("../images/bg.png");
-    background-size: cover;
-    background-position: center; 
-    height: 100vh;
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 11;
 }
 /*start nav*/
 nav .navbar-nav .nav-link{
@@ -40,34 +41,30 @@ nav .btn:focus{
     background-color: var(--second-color);
     color: var(--main-color);
     border: 1px solid var(--second-color);
-    box-shadow: 1px 2px 15px #0000007d;
+    box-shadow: 0 2px 15px rgb(0 0 0/20%);
 }
 /*end nav*/
-/*start div images*/
-.images {
-    width: fit-content;
-    background-color: red;
-    transform: translateY(50px);
-}
-/* .images .first img {
-    transform: translateY(55px);
-} */
-.images .second img {
-    position: relative;
-    z-index: 111;
-}
-@media (max-width:576px) {
-    .images {
-        transform: translateY(50px);
-    }
-}
-@media (max-width:400px) {
-    .images .first img {
-        transform: translateY(38px);
-    }
-}
-/*end div images*/
 /*end header*/
+/*start main*/
+main {
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+main .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .images .second img {
+    transform: translateY(-44px);
+}
+/*end main*/
 /*start section heading*/
 .heading p {
     color:var(--main-color);
@@ -94,31 +91,24 @@ nav .btn:focus{
     color: #ca4658bf;
 }
 .info .message textarea {
-    text-align: right;
-    width: 98%;
-    height: 150%;
-    border:1px solid #12121321;
-    outline:none;
-    margin-bottom:20px;
+    resize: none;
+    height: 200px;
+    border: 1px solid #12121321;
+    border-radius: 5git afddpx;
+    outline: none;
 }
-.info .message button{
+.info .message .btn {
     display: block;
-    width: 25%;
-    text-align: center;
-    background-color:#dd4141e8;
-    color:white;
-    padding:3px;
-    border-radius:50px;
-    font-size:17px;
-    font-weight: 550;
-    margin:auto;
-    outline:none;
-    border:1px solid #f68338;
-    box-shadow:-7px -7px 20px #f68338 inset;
-    transition: box-shadow .2s ease .1s;
+    width: 27%;
+    background-color: #dd4141e8;
+    color: white;
+    outline: none;
+    border: 1px solid #f68338;
+    box-shadow: -12px -8px 25px #f68338 inset;
+    transition: all .7s ease-in;
 }
-.info .message button:hover{
-    box-shadow: 1px 2px 15px #0000005e;
+.info .message .btn:hover {
+    box-shadow: 0 2px 15px rgb(0 0 0/20%);
 }
 .info .box h3 {
     background-color: var(--second-color);
@@ -127,7 +117,7 @@ nav .btn:focus{
     padding: 8px 37px;
     margin: auto;
 }
-.info .btn {
+.info .box .btn {
     padding: 8px 34px;
     color: var(--second-color);
     width: 80%;
@@ -233,14 +223,14 @@ footer .contact .link {
     margin: auto;
     border-radius: 25px;
     padding: 12px;
-    transition: all .4s ease-in-out;
+    transition: all .6s ease-in-out;
     cursor: pointer;
 }
 footer .contact a {
     color: #ff45009c;
     font-size: 18px;
     text-decoration: none;
-    transition: all .4s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 footer .contact svg {
     font-size: 24px;
